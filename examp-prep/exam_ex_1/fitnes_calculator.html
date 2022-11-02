@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="flex-container">
+    <img src="image/calculator.png" alt="">
+    <form>
+        <h1>Fitness Calculator</h1>
+        <button class="btn btn-success">Standart units (US)</button>
+        <button class="btn">Metric units</button>
+        <fieldset>
+            <p>Gender</p>
+
+            <select name="gender" id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select>
+            <input name="age" id="age" type="text" placeholder="Years...">
+            <p>Weight</p>
+            <input id="weight" name="weight" type="text" placeholder="Pounds...">
+            <p>Height</p>
+            <input id="height-feet" name="height-feet" type="text" placeholder="Feet...">
+            <input id="height-inch" name="height-inch" type="text" placeholder="Inches...">
+            <button class="btn-calc" type="submit">Calculate</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

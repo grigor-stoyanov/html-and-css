@@ -1,0 +1,65 @@
+/* Flexbox is used to use layout within a container*/
+.container {
+    border: 2px dashed black;
+    /*elements align next to each other*/
+    /*the flex container on its own can act like inline element with inline-flex*/
+    display: flex;
+
+    /* row,row-reverse,column,column reverse (type of order of elements)*/
+    /* flex-direction: column; */
+
+    /* elements out of bounds are going to new row(retaining their width)*/
+    flex-wrap: wrap;
+    /* height: 180px; */
+    /* flex always makes items fit evenly on the container*/
+
+
+    /* fits element in direction of our flex */
+    justify-content: space-evenly;
+
+    /* stretch initial value (height same for all elements)*/
+    /* flext-start all items go in the bottom (same for top and center)  */
+    align-items: center;
+
+    /* row height is defined of height of highest element !*/
+
+
+    /* Align-content works on all elements in the content
+    requires wrapping and height!*/
+    /* align-content: space-between ; */
+    /* height: 250px; */
+
+    /* can be combined with justify content*/
+    /* gap: 24px; */
+}
+
+.container .item {
+    width: 100px;
+}
+
+.container .item:nth-child(1) {
+    height: 80px;
+}
+
+/* ------ Children properties ------ */
+.container .item:nth-child(6) {
+    padding: 0.5rem;
+    border: 3px solid black;
+    order: -2;
+    align-self: flex-end;
+    /*shrinks the elements as browser size shrinks*/
+    /* works with nowrap */
+    /* value indicates shrink factor */
+    flex-shrink: 3;
+    flex-grow: 3;
+    flex-basis: 200px;
+    flex: 0 1 auto;
+}
+
+.container .item:nth-child(7) {
+    /* higher order goes on the end*/
+    order: -1;
+    flex-grow: 1;
+    /* align element individually */
+    align-self: flex-end;
+}

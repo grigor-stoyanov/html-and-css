@@ -1,0 +1,64 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/*css variables
+global variables are saved in root selector(html tag or root selector)
+they begin with --*/
+:root {
+    --clr-primary: #FF9671;
+    --clr-primary-light: #fff5f1;
+    --clr-grey: #58545d;
+    --clr-grey-light: #e7e8ea;
+}
+
+
+body {
+    background-color: #dadbdf;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.group {
+    width: 300px;
+    margin: 50px auto;
+    display: block;
+    font-size: 0;
+}
+
+.group .group__button.active {
+    color: var(--clr-primary);
+    border-color: var(--clr-primary);
+    background-color: var(--clr-primary-light);
+    border-width: 1px;
+}
+
+.group .group__button {
+    --btn-color-primary: var(--clr-grey);
+    --btn-color-primary-light: var(--clr-grey-light);
+    font-size: 12px;
+    padding: 8px 12px;
+    width: 25%;
+    border-radius: 0;
+    /* var function allows use of variables*/
+    color: var(--btn-color-primary);
+    border: 1px solid var(--btn-color-primary);
+    background-color: var(--btn-color-primary-light);
+}
+
+.group .group__button:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.group .group__button:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.group .group__button:not(:first-child) {
+    border-left: 0;
+}

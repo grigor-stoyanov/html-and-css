@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link href="demo.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>selectors</title>
+</head>
+<body>
+<h1>CSS Selectors</h1>
+
+<div class="section">
+    <ul id="list" class="main">
+        <li class="main-item"><span class="text">Main item 1</span</li>
+        <li class="main-item"><p class="text">Main item 2</p></li>
+        <li class="main-item">
+            <ul id="sub-list" class="sub">
+                <li class="sub-item"><span class="text">Sub item 1</span></li>
+                <li class="sub-item"><span class="text">Sub item 2</span></li>
+                <li class="sub-item"><span class="text">Sub item 3</span></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!-- Semantic HTML elements describe its meaning to browser and developer e.g. strong,paragraph -->
+<!-- div is not semantic tag because it can be used for everything -->
+<!-- Semantic HTML helps with SEO  and structure -->
+<header>
+    <!-- Introduction -->
+    <!--  h1 most important heading for page or content  -->
+    <h1>Welcome</h1>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/tasks">Taskboard</a></li>
+            <li><a href="/create">Create</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- Content -->
+    <section>
+        <!-- slices up content -->
+        <header><h1>Article</h1></header>
+        <!--  self-contained composition-->
+        <article>
+            <!-- reusable and distributable outside the page-->
+            <!-- widget,cards,block post,comments -->
+        </article>
+        <figure>
+            <!-- self-contained content referenced as single unit-->
+            <img src="img.png" alt="Picture">
+            <!-- predefined style-->
+            <figcaption>Picture of Something</figcaption>
+        </figure>
+        <details>
+            <!-- additional details user can see or hide-->
+            <summary> Visible Heading for Details</summary>
+            <p>Actual Details for item in question</p>
+        </details>
+        <footer></footer>
+    </section>
+
+</main>
+<aside>
+    <!-- Sidebar -->
+</aside>
+<footer>
+    <!--  Secondary Content  -->
+    <time>Human readable Time</time>
+    <address>content information for site/author</address>
+</footer>
+
+
+<!-- Forms and User Input -->
+<!-- action defines where the user should be directed-->
+<!-- method defines type of request from user -->
+<!-- all input is sent via queryparams-->
+
+<form method="post" action="/submit.html">
+    <!-- for points towards the corresponding input automatically-->
+    <label for="text-input">Input Text</label>
+    <!-- required prevents from posting with no input-->
+    <input id="text-input" required type="text" aria-label="User Input"/>
+    <input type="color" aria-label="User Input"/>
+    <input type="date" aria-label="User Input"/>
+    <!-- built in validation-->
+    <input type="email" aria-label="User Input"/>
+    <!-- pre-defined value with min and max-->
+    <input value="123" min="1" max="500" type="number" aria-label="User Input"/>
+    <!-- placeholder is hint-->
+    <input placeholder="Type your password Here!" type="password" aria-label="User Input"/>
+    <!-- if left unspecified default value is on-->
+    <input type="checkbox" value="checked" aria-label="User Input"/>
+    <!-- name binds all radio buttons with same name-->
+    <input type="radio" name="options" value="option1" aria-label="User Input"/>
+    <!-- disabling input-->
+    <input type="range" aria-label="User Input" disabled/>
+    <input type="file" aria-label="User Input"/>
+    <!-- default behaviour of submit is refreshing the page-->
+    <input type="submit" value="Send"/>
+    <!-- more semantic allows nesting of elements default type is submit -->
+    <button type="reset">Clears Inputs</button>
+    <button type="button">Button</button>
+    <button type="submit">submit</button>
+    <!-- pre-generated style and semantic grouping-->
+    <fieldset>
+        <legend>
+            <label>Quantity:</label>
+            <input type="text" name="quantity" aria-label="Quantity"/>
+            <label>Remarks:</label>
+            <!-- You can use attribute pattern to validate input with regex as its typed-->
+            <textarea name="remarks" cols="30" rows="5" aria-label="remarks">Some Text</textarea>
+        </legend>
+    </fieldset>
+    <select id="size" name="size" aria-label="size">
+        <option value="39">39 EU</option>
+        <option value="40">40 EU</option>
+        <option value="41">41 EU</option>
+    </select>
+    <progress value="50" max="100"></progress>
+</form>
+<!-- Tables -->
+<table border="1">
+    <thead>
+    <tr>
+        <th>Player Name</th>
+        <th>Score</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Pesho</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>Gosho</td>
+        <td>100</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>Last update</td>
+        <td>4.2</td>
+    </tr>
+
+    </tfoot>
+</table>
+</body>
+</html>

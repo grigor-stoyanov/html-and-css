@@ -1,0 +1,68 @@
+/* Default Position of Elements will not react with top bottom left right z-index*/
+.static .tags {
+    position: static;
+    /* This wont work !*/
+    top: 20px;
+    left: 20px;
+}
+
+/*Moving relative elements only affects them visually
+they move based on initial position
+Their initial position always remains the same
+it keeps its proportions and leaves empty space in html flow*/
+.relative .tags {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    background-color: gray;
+}
+
+.absolute {
+    position: relative;
+}
+
+/* Absolute positioning is positioned according to x,y of body
+we need to apply the limits of which we want to position it
+the parent element must be position different of static!!!
+the element goes on a new layer and its width changes
+*/
+.absolute .tags {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: gray;
+    width: 80%;
+}
+
+/* FIXED
+same as before it will go outside the html flow in another layer
+Positions relative to Browser e.g. making footers,notifications,navigations,chatbots...
+*/
+
+.fixed {
+    position: relative;
+}
+
+.fixed .tags {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    width: 100%;
+}
+
+/* STICKY
+Sticks content to upper part of browser when scrolling down
+Behaviour like static until scrolled and like relative leaves empty space in html flow
+it stops at the end of its container
+if there is an overflow auto on my container its controlled by the scroll of its own container*/
+.sticky {
+    height: 500px;
+    overflow: auto;
+}
+
+.sticky .tags {
+    position: sticky;
+    top: 100px;
+}
+

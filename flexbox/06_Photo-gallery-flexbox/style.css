@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    display: flex;
+    background-color: lightgray;
+}
+
+img{
+    border:5px solid black;
+    height: 400px;
+    width:250px;
+    padding: 15px;
+    object-fit: contain;
+    background-color: white;
+}
+
+ul{
+    display: flex;
+    margin:0;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+li{
+    padding: 5px;
+    display: flex;
+}

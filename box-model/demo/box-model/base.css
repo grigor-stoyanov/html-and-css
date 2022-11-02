@@ -1,0 +1,57 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e7e5ea;
+}
+
+.item {
+    font-weight: bold;
+}
+
+/* 
+      ------
+      Block example
+      ------
+  */
+
+.block {
+    background-color: rgba(255, 199, 95, 0.4);
+}
+
+
+/* Block Elements Will Always contain the full row even if width is changed*/
+/* That's why we use inline-block elements*/
+.block .item {
+    display: block;
+    background-color: #33A595;
+}
+
+/* 
+      ------
+      Inline example
+      ------
+  */
+.inline {
+    background-color: rgba(255, 111, 145, 0.4);
+}
+
+.inline .item {
+    display: inline;
+}
+
+/* 
+      ------
+      Inline-block example
+      ------
+  */
+.inline-block {
+    background-color: rgba(132, 94, 194, 0.4);
+    /* Content is Overflowing of the container */
+    width: 50%;
+    height: 200px;
+    /*  we can fix it with overflow*/
+    overflow: auto;
+}
+
+.inline-block .item {
+    display: inline-block;
+}

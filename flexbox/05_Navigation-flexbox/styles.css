@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+}
+nav{
+    margin-left:auto;
+}
+ul {
+    margin:0 24px 0 0;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 153, 0)
+}
+
+header p {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 24px;
+    font-size: 32px;
+}

@@ -1,0 +1,32 @@
+#info {
+    background-color: #fff;
+    text-align: center;
+}
+
+#info .info__border-bottom {
+    border-top: 3px solid red;
+    position: relative;
+    top: -25px;
+    width: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info .info__layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#info .info__layout .info__layout__item img {
+    width: 50px;
+}
+
+.info__layout__item__tittle {
+    color: red;
+}
+
+.info__layout__item__desc {
+    font-size: 12px;
+    padding: 0 150px;
+}
+

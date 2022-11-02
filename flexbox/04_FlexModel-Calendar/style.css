@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    max-width: 65vw;
+}
+
+.container span {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.container .week__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.theader {
+    width: 100%;
+}
+
+.day{
+    width: 20%;
+}
+
+.day:nth-last-child(-n+2){
+    width: 50%;
+}
+
+.notes{
+    display: flex;
+    flex-direction: column;
+}
+.notes span{
+    height: 50%;
+}
+
+
+
+
+

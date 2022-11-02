@@ -1,0 +1,78 @@
+/*MOBILE FIRST APPROACH*/
+
+@import url("reset.css");
+@import url("variables.css");
+@import url("client-section.css");
+@import url("business-section.css");
+@import url('hero.css');
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--clr-helper-3);
+}
+
+.btn {
+    border: none;
+    width: 190px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.btn--primary {
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+    box-shadow: 0px 12px 30px 0px #185CFF2E;
+
+}
+
+.section--narrow {
+    max-width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+    /*padding: 100px 50px;*/
+    padding: 48px 24px;
+}
+
+.section__title, .section__desc {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 540px;
+}
+
+
+.section__title {
+    /*margin-bottom: 30px;*/
+    color: var(--clr-black);
+    /*font-size: 46px;*/
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+
+.section__desc {
+    margin-bottom: 50px;
+    color: var(--clr-grey);
+    /*font-size: 20px;*/
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+    .section--narrow {
+        padding: 100px 50px;
+
+    }
+
+
+    .section__title {
+        margin-bottom: 30px;
+        font-size: 46px;
+
+    }
+
+    .section__desc {
+        font-size: 20px;
+
+    }
+}

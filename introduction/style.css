@@ -1,0 +1,19 @@
+/*selecting by class,id,name,custom class*/
+h1 {
+    color: aqua;
+}
+
+.p {
+    font-size: 14px;
+    font-family: "Javanese Text", serif;
+}
+
+#begin {
+    color: red;
+}
+
+.asd {
+    box-shadow: gray 10px 10px;
+}
+
+/*nesting selectors*\

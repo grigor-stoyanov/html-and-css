@@ -1,0 +1,19 @@
+#info h3 {
+    color: white;
+    font-weight: 300;
+    flex-basis: 24%;
+}
+
+#info p {
+    color: lightgray;
+    font-size: 14px;
+    flex-basis: 24%;
+}
+
+#info {
+    margin: 64px 32px;
+    gap:12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

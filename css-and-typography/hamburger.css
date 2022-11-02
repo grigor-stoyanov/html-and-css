@@ -1,0 +1,24 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+    padding: 3px 5px;
+}
+/* when the screen size changes it will change the property */
+@media screen and (min-width:480px){
+    /* responsive design to change navbar to horizontal view for mobile */
+    li{
+        width:100%;
+        color: green;
+    }
+    ul{
+        flex-direction:column;
+    }
+}

@@ -1,0 +1,16 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+}
+
+main{
+    width: 700px;
+    height: 600px;
+    margin:60px;
+}
+.new{
+    position: relative;
+    top:-200px;
+    right: 150px;
+}

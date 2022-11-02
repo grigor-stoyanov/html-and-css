@@ -1,0 +1,14 @@
+/* fix for float going out of bounds of layout */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  /* floats text next to an item
+  it goes outside workflow and breaks the next rows
+  it breaks your layout!
+  main case is for putting images in between text*/
+  float: right;
+}

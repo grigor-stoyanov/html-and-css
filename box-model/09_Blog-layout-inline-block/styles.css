@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+article section img{
+    height: auto;
+    width:50%;
+}
+aside{
+    float: right;
+    display: inline-block;
+}
+article{
+    display:inline-block;
+    vertical-align: top;
+    width:60%;
+    margin:16px 32px;
+}
+footer time{
+    display: block;
+    padding: 16px 0;
+}
+footer{
+    padding: 16px 0;
+}

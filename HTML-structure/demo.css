@@ -1,0 +1,59 @@
+/* Grouping Selectors */
+/* search an element with class main item within a ul within a section class*/
+/* also selects all children of .main-item */
+
+
+div.section ul .main-item p.text {
+    color: lightgreen;
+}
+
+div.section ul .main-item span.text {
+    color: red;
+}
+
+
+/* Multiple Selectors,same style */
+/* , selects multiple items with same style*/
+.main .main-item > .text, .sub .sub-item > .text {
+    color: red;
+}
+
+
+/* Select Direct Child ignores all other nested children */
+.main .main-item > .text {
+    color: cyan;
+}
+
+/* Overwriting by Order */
+/* the last style overrides first */
+.main .main-item > text {
+    color: red;
+}
+
+.main .main-item > text {
+    color: blue;
+}
+
+/* Specificity */
+/* specificity value is defined by power of selectors */
+/* highest to lowest: attribute,id,class,elements*/
+/* Overwriting by Specificity */
+/* specificity value of this selector is 1 1 1 1*/
+div ul li span {
+    color: red;
+}
+
+/* specificity value of this selector is 10 1 10 1 */
+.selection ul .main-item .text {
+    color: green;
+}
+
+/* 10 100 10 10*/
+.selection #list .main-item .text {
+    color: green
+}
+
+/* 11 111 10 11*/
+div.section ul#list.main .main-item span.text {
+    color: red;
+}

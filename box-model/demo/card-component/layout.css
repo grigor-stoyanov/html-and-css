@@ -1,0 +1,22 @@
+.layout-item {
+    /* HTML and CSS are in their base text editors
+    HTML assumes each element to be separate when there is a new line and adds an empty caracter
+    the fix is to use 0px font-size on parent */
+    width: calc((100% - 32px) / 3);
+    display: inline-block;
+    margin:16px 16px 16px 0;
+    vertical-align: middle;
+}
+/*nth-child searches sibling elements in a row of selected type according to child elements
+nth-of-type searches sibling elements only according to type of element*/
+.layout-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.layout {
+    font-size: 0;
+}
+
+body {
+    margin: 5px;
+}

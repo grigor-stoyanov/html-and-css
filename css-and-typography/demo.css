@@ -1,0 +1,38 @@
+/*@font-face{
+font-family: Open Sans;
+src: url("/fonts/opensans.woff") format("woff");
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+div {
+    border: 1px solid black;
+    background: linear-gradient(rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.9)), url("https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: contain;
+}
+
+p.custom {
+    /**/
+    font-weight: 900;
+    font-family: 'Bungee Spice', cursive;
+    font-style: italic;
+    /*em scale times base rem scale times parent container*/
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+p.lorem {
+    line-height: 55px;
+    text-decoration: line-through;
+    text-indent: 40px;
+    /* truncate text when cannot fit in container */
+    text-overflow: clip;
+    text-transform: capitalize;
+    /* defines how words break at EOL */
+    word-break: normal;
+    text-shadow: 2px 4px 10px blue;
+    /* rgba is used to make transparent fonts/images */
+    color: rgba(130, 250, 150, 70%);
+    cursor: move;
+    outline: 4px dotted yellow;
+}

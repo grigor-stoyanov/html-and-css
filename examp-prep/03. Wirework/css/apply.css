@@ -1,0 +1,25 @@
+#apply{
+    background-color: white;
+    text-align: center;
+    padding: 32px;
+}
+#apply h2{
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#apply p{
+    margin-top:0;
+    font-size: 12px;
+    color: lightgray;
+}
+.btn{
+    border:none;
+    padding:12px;
+}
+.btn-success{
+    margin-top:12px;
+    width: 226px;
+    background-color: green;
+    color:white;
+}

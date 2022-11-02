@@ -1,0 +1,17 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    height:32px;
+    font-size:12px;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.site-header div {
+    color: white;
+}
+.site-header .site-header__socials .fa-brands{
+    margin:0 5px;
+    cursor:pointer;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15%;
+    border: 1px solid black;
+    box-shadow: 5px 10px 15px 5px rgb(0, 0, 0, 0.3);
+}
+
+.flex-container img {
+    width: 500px;
+    height: 100%;
+}
+
+.flex-container form {
+    margin-right: 5%;
+    text-align: center;
+}
+
+.flex-container form fieldset {
+    border: none;
+}
+
+
+
+#gender {
+    width: 50%;
+    margin-right: 12px;
+    padding: 1px 2px;
+}
+
+#gender option:first-child::after{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color:green;
+}
+
+#gender option:last-child::after{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color:blue;
+}
+
+
+#weight {
+    width: 80%;
+}
+
+#height-feet, #height-inch {
+    width: 45%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.flex-container form h1 {
+    text-transform: uppercase;
+}
+
+.flex-container form fieldset p {
+    font-weight: 900;
+}
+
+.btn {
+    padding: 5px 25px;
+    border: 1px solid black;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+}
+
+.btn-success {
+    margin-right: 68px;
+    padding: 5px 15px;
+    background-color: lightgreen;
+}
+
+.btn-calc {
+    border: none;
+    display: inline-block;
+    margin-top: 50px;
+    width: 100%;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    background-color: cornflowerblue;
+    box-shadow: 5px 5px 10px 2px rgb(0, 0, 0, 0.5);
+}

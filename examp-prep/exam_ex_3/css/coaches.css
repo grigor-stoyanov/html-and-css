@@ -1,0 +1,34 @@
+#coaches {
+    background-color: rgb(238,238,238);
+    text-align: center;
+}
+
+#coaches .coaches__border-bottom {
+    border-top: 3px solid red;
+    position: relative;
+    top: -25px;
+    width: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#coaches .coaches__layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#coaches .coaches__layout .coaches__layout__item img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.coaches__layout__item__tittle {
+    color: red;
+}
+
+.coaches__layout__item__desc {
+    font-size: 12px;
+    padding: 0 150px;
+    color: rgba(150, 146, 146, 0.9);
+}
+

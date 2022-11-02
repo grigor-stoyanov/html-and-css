@@ -1,0 +1,29 @@
+#hero {
+    display: flex;
+    background-color: orangered;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .hero__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 400px;
+
+}
+#hero p{
+    font-size: 16px;
+}
+
+#hero strong{
+    text-decoration: underline;
+}
+
+#hero .hero__content{
+    width: 100vw;
+    color:white;
+    padding: 32px 64px;
+    text-align: center                                                          ;
+}

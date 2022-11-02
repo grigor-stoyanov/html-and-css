@@ -1,0 +1,28 @@
+h1 {
+    background-color: lightgreen;
+}
+
+/* Hover styles dont work on mobile but can be altered with mediaquery too*/
+p {
+    background-color: red;
+}
+
+p:hover {
+    background-color: lightpink;
+}
+
+/* Media Query Syntax */
+/* Media queries must be after main style is applied!!*/
+/*2 approaches Desktop first and Mobile fist*/
+/*Desktop first is better if you dont know the design of your code*/
+/*Mobile first we add stuff to our design instead of scaling down*/
+@media (max-width: 400px) and (min-width: 700px) {
+    h1 {
+        background-color: lightsalmon;
+    }
+
+}
+
+@media screen {
+
+}

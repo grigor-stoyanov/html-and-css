@@ -1,0 +1,20 @@
+/* Grid creates sizes for our elements and its perfect for layouts */
+.container-grid {
+    display: grid;
+    /* create 3 grid columns with spaces for each element */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Flex only aligns position for our elements */
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.container-flex .item {
+    /* add width to adjust items going on new rows and depends on item width*/
+    width: 30%;
+    flex-grow: 1;
+}

@@ -1,0 +1,90 @@
+@media screen and (max-width: 600px) {
+    body {
+        max-width: unset;
+        width: 100vw;
+    }
+
+    .site-header .site-navigation {
+        display: none;
+    }
+
+    .site-main {
+        margin: 0;
+    }
+
+    .site-main .entry-header {
+        border-radius: unset;
+        background-position: center;
+        background-size: unset;
+    }
+
+    .button-primary {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .site-main .entry-header .button-primary {
+        width: 25%;
+    }
+
+    .site-main .site-logos .site-logos-container {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: unset;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-main .entry-content .site-information {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-main .entry-content .entry-description {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .site-main .entry-content .button-primary {
+        width: 20%;
+    }
+
+    .site-main .entry-content .site-form {
+        margin-top: unset;
+    }
+
+    .site-main .entry-content .site-form p {
+        flex-direction: column;
+    }
+
+    .site-main .entry-content .site-form input {
+        width: 100%;
+    }
+
+    .site-main .entry-content .site-form button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .site-main .site-blog .site-blog-container {
+        margin-top: unset;
+    }
+
+    .site-main .site-blog .site-blog-container .entry-title {
+        font-size: 4rem;
+    }
+
+    .site-main .site-blog .site-blog-container .site-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-main .site-blog .site-blog-container .site-posts .site-post {
+        width: 70%;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
